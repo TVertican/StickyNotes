@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    background: #D7E9B9;
+  }
+  
+  #sticky {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    padding: 24px;
+    gap: 24px;
+  }
+  
+  .note-container {
+  position: relative;
+}
+
+  .note {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    box-sizing: border-box;
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.15);
+    resize: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    color: #e69edb;
+    font-weight: bolder;
+  }
+
+  .note::placeholder {
+    color: hsl(24, 93%, 73%);
+  }
+  
+  #add-note {
+    height: 300px;
+    width: 300px;
+    border: none;
+    outline: none;
+    background:#FFFBAC; opacity: 0.765;
+    border-radius: 10px;
+    font-size: 120px;
+    color: hsl(24, 93%, 73%); opacity: 0.819;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  #add-note:hover {
+    background: rgba(0, 0, 0, 0.2);
+  }
+  
+.delete-button {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background-color: hsl(24, 93%, 73%)
+  ;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #e69edb;
+}
